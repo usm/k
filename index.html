@@ -1,0 +1,15 @@
+<script src="usmS.js"></script>
+
+<h3> usmS</h3>
+<p>Calculation of s if equation 2 of <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2678093" target="_blank">www.ncbi.nlm.nih.gov/pmc/articles/PMC2678093</a>. </p>
+
+<p>
+n=<input size=10 value=4 id="n">, s=<span id="s">2</span>
+<p>
+<script>
+    document.getElementById('n').onkeyup=()=>{
+        console.log(Date())
+        //document.getElementById('n').value=parseInt(document.getElementById('n').value)
+        document.getElementById('s').textContent=Math.round(usmS(parseInt(document.getElementById('n').value))*1000000000000000)/1000000000000000
+    }
+</script>
